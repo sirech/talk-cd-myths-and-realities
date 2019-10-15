@@ -12,13 +12,14 @@ $code-background  : #F8F8F8;
 $overlay          : transparentize(#000, .5);
 $font-size        : 28px;
 $font-size-impact : 128px;
-$font             : Arial, Helvetica, sans-serif;
-$font-title       : Arial, Helvetica, sans-serif;
+$font             : 'Open Sans', Arial, Helvetica, sans-serif;
+$font-title       : 'Open Sans', Arial, Helvetica, sans-serif;
 $font-fixed       : 'Lucida Console', Monaco, monospace;
 $margin           : 20px;
 $iframe-scale     : 1.5;
 $paper            : rgb(162, 144, 123);
 $react-blue       : $secondary;
+$concourse        : rgb(61, 60, 60);
 
 // CSS Base
 // ---------------------------------------------------------------------------
@@ -239,17 +240,15 @@ blockquote {
 }
 
 .bad-practice {
-  &, h1, h2 {
+  &, h1, h2, h3 {
     color: red;
   }
 }
 
-.green {
-  font-size: 5rem;
-}
-
-.red {
-  font-size: 5rem;
+.good-practice {
+  &, h1, h2, h3 {
+    color: green;
+  }
 }
 
 .paper {
@@ -258,6 +257,16 @@ blockquote {
 
 .react-blue {
   color: $react-blue;
+}
+
+.concourse {
+  background-color: $concourse;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
 }
 
 .image-grid p {
@@ -274,7 +283,8 @@ blockquote {
 }
 
 .remark-slide-number {
-  display: none;
+  color: $primary;
+  // display: none;
 }
 
 .side-by-side img {
