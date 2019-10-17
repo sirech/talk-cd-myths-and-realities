@@ -33,12 +33,14 @@ class: middle center
 > Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
 
 .bottom-right[
-### https://continuousdelivery.com/
+### continuousdelivery.com/
 ]
 
 ---
 
-picture of CI/CD book
+class: center middle
+
+![cd](images/cd.jpg)
 
 ---
 
@@ -48,11 +50,13 @@ class: transition
 
 ---
 
-4 key metrics
+class: center middle
 
----
+![accelerate](images/accelerate.jpg)
 
-picture of quality of life
+.bottom-right[
+### thoughtworks.com/radar/techniques/four­key­metrics
+]
 
 ---
 
@@ -102,7 +106,9 @@ class: center middle
 
 ---
 
-picture of theory to practice
+class: center middle
+
+# That's not very concrete
 
 ---
 
@@ -158,7 +164,8 @@ picture release process (including test systems)
 
 ---
 
-picture of issues
+class: full-width
+background-image: url(images/thisisfine.png)
 
 ---
 
@@ -193,10 +200,13 @@ class: transition
 class: center middle
 
 # Many small improvements
+## Over the course of roughly one year
 
 ---
 
-venn diagram technology / practices / process
+class: center middle
+
+![venn](images/venn.png)
 
 ---
 
@@ -289,7 +299,13 @@ class: center middle
 
 ---
 
-picture of linters
+class: center middle
+
+.image-grid[
+.img[![eslint](images/eslint.jpg)]
+.img[![prettier](images/prettier.png)]
+.img[![stylelint](images/stylelint.png)]
+]
 
 ---
 
@@ -305,7 +321,8 @@ class: transition
 
 ---
 
-picture of cloud
+class: center middle
+![cloud](images/cloud.png)
 
 ---
 
@@ -346,11 +363,13 @@ class: center middle
 
 ---
 
-picture of infrastructure as code
+class: center middle
+![iac](images/iac.jpg)
 
 ---
 
-picture of terraform
+class: center middle
+![terraform](images/terraform.png)
 
 ---
 
@@ -426,7 +445,8 @@ sample immutable code
 
 ---
 
-picture of kotlin
+class: center middle
+![kotlin](images/kotlin.png)
 
 ---
 
