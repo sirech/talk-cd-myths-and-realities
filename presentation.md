@@ -13,6 +13,15 @@ class: impact
 
 ---
 
+class: impact center middle
+
+## Mario Fernandez
+ Lead Developer
+ 
+ **Thought**Works
+
+---
+
 class: transition
 
 # What is Continuous Delivery?
@@ -193,7 +202,7 @@ venn diagram technology / practices / process
 
 class: transition
 
-# Delivery pipeline
+# #1 Delivery pipeline
 
 ---
 
@@ -292,7 +301,132 @@ class: center middle
 
 class: transition
 
-# Infrastructure
+# #2 Infrastructure
+
+---
+
+picture of cloud
+
+---
+
+class: center middle
+
+# How do you become faster by *adding* responsibilities to the team?
+
+---
+
+class: center middle
+
+# DevOps mindset
+
+---
+
+class: center middle
+
+# Autonomy
+
+
+---
+
+class: center middle
+
+# Agility
+
+---
+
+class: center middle
+
+# Leverage a larger community
+
+---
+
+class: center middle
+
+# Yeah, but how?
+
+---
+
+picture of infrastructure as code
+
+---
+
+picture of terraform
+
+---
+
+terraform code snippet
+
+---
+
+picture of frontend being deployed to cdn
+
+---
+
+picture of backend being deployed to ECS
+
+---
+
+picture of support hero
+
+---
+
+class: center middle
+
+# Owning your infrastructure makes it exponentially easier to deliver
+
+---
+
+class: transition
+
+# #3 The Code
+
+???
+
+- notice how I didn't talk about the code we wrote yet
+
+---
+
+class: center middle
+
+# TDD
+
+---
+
+picture of testing pyramid transition
+
+---
+
+class: center middle
+
+# TBD
+
+---
+
+class: center middle
+
+# Feature Toggles
+
+.bottom-right[
+### martinfowler.com/articles/feature-toggles.html
+]
+
+---
+
+sample feature toggle
+
+---
+
+class: center middle
+
+# Immutability
+
+---
+
+sample immutable code
+
+---
+
+picture of kotlin
 
 ---
 
@@ -385,9 +519,31 @@ class: impact
 
 ---
 
+class: center middle
+
+# Continuous Delivery can have a huge impact in the performance of a team
+
+---
+
+class: center middle
+
+# It is not free. You have to invest to gain
+
+---
+
+class: center middle
+
+# It is never done. You have to keep working and improving
+
+---
+
 class: impact
 
 # Links
+
+---
+
+links go here
 
 ---
 
