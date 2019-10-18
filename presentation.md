@@ -7,13 +7,14 @@ layout: true
 
 ---
 
-class: impact
+class: impact full-width
+background-image: url(images/background1.jpg)
 
 # {{title}}
 
 ---
 
-class: impact center middle
+class: transition
 
 ## Mario Fernandez
  Lead Developer
@@ -123,13 +124,15 @@ class: center middle
 
 ---
 
-class: impact
+class: impact full-width
+background-image: url(images/background2.jpg)
 
 # Case Study
 
 ---
 
-class: impact
+class: impact full-width
+background-image: url(images/background3.jpg)
 
 # Agile transformation in the automotive industry
 
@@ -533,7 +536,8 @@ class: center middle
 
 ---
 
-class: impact
+class: impact full-width
+background-image: url(images/background4.jpg)
 
 # Conclusion
 
@@ -557,7 +561,8 @@ class: center middle
 
 ---
 
-class: impact
+class: impact full-width
+background-image: url(images/background5.jpg)
 
 # Links
 

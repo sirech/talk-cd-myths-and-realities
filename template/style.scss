@@ -1,19 +1,20 @@
 // Theme
 // ---------------------------------------------------------------------------
 
-$primary          : #20232a;
-$secondary        : #61DAFB;
-$tertiary         : rgb(43, 106, 108);
+$primary          : #85bb80;
+$secondary        : #80BB99;
+$tertiary         : #A3BB80;
 $light            : #FFF;
 $dark             : #333;
-$text-dark        : #212121; 
+$text-dark        : #212121;
+$text-grey        : #484848;
 $text-light       : $light;
 $code-background  : #F8F8F8;
 $overlay          : transparentize(#000, .5);
 $font-size        : 28px;
 $font-size-impact : 128px;
 $font             : 'Open Sans', Arial, Helvetica, sans-serif;
-$font-title       : 'Open Sans', Arial, Helvetica, sans-serif;
+$font-title       : 'Open Sans'Arial, Helvetica, sans-serif;
 $font-fixed       : 'Lucida Console', Monaco, monospace;
 $margin           : 20px;
 $iframe-scale     : 1.5;
@@ -30,9 +31,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 $margin 0;
   font-family: $font-title;
 }
-h1 { color: $primary; }
-h2 { color: $secondary; }
-h3 { color: $text-dark; }
+h1, h2 { color: $text-dark; }
+h3 { color: $text-grey; }
 li { margin-bottom: .25em; };
 pre, code {
   text-align: left;
@@ -81,7 +81,7 @@ blockquote {
   background-color: $primary;
   vertical-align: middle;
   text-align: center;
-  &, h1, h2 { color: $react-blue; }
+  &, h1, h2 { color: $light; }
   h1 { font-size: $font-size-impact; }
 }
 
@@ -220,7 +220,7 @@ blockquote {
 // Mine
 
 .transition {
-  background-color: $secondary;
+  background-image: linear-gradient(to bottom right, $primary, $secondary, $tertiary);
   vertical-align: middle;
   text-align: center;
   &, h1, h2 { color: $text-light; }
