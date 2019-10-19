@@ -10,7 +10,9 @@ layout: true
 class: impact full-width
 background-image: url(images/background1.jpg)
 
+.impact-wrapper[
 # {{title}}
+]
 
 ---
 
@@ -131,14 +133,18 @@ picture of left to right
 class: impact full-width
 background-image: url(images/background2.jpg)
 
+.impact-wrapper[
 # Case Study
+]
 
 ---
 
 class: impact full-width
 background-image: url(images/background3.jpg)
 
-# Agile transformation in the automotive industry
+.impact-wrapper[
+# Agile transformation in automotive
+]
 
 ---
 
@@ -565,7 +571,9 @@ class: center middle
 class: impact full-width
 background-image: url(images/background4.jpg)
 
+.impact-wrapper[
 # Conclusion
+]
 
 ---
 
@@ -590,7 +598,9 @@ class: center middle
 class: impact full-width
 background-image: url(images/background5.jpg)
 
+.impact-wrapper[
 # Links
+]
 
 ---
 

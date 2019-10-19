@@ -45,7 +45,6 @@ img { vertical-align: inherit; }
 blockquote {
   border-left: 8px solid;
   padding-left: .5em;
-  color: $tertiary;
   text-align: left;
   margin: 1em 0;
   & > p { margin: 0; }
@@ -82,7 +81,9 @@ blockquote {
   vertical-align: middle;
   text-align: center;
   &, h1, h2 { color: $light; }
-  h1 { font-size: $font-size-impact; }
+  h1 {
+    font-size: $font-size-impact;
+  }
 }
 
 .full {
@@ -305,4 +306,12 @@ blockquote {
 
   background-color: $text-light;
   color: $text-dark;
+}
+
+.impact-wrapper {
+  margin-left: -2em;
+  margin-right: -2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
 }
