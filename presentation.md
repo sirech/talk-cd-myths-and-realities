@@ -124,6 +124,10 @@ class: center middle
 
 ---
 
+picture of left to right
+
+---
+
 class: impact full-width
 background-image: url(images/background2.jpg)
 
@@ -215,7 +219,10 @@ class: center middle
 
 class: transition
 
-# #1 Delivery pipeline
+# Delivery pipeline
+.counting[
+# 1
+]
 
 ---
 
@@ -318,9 +325,12 @@ class: center middle
 
 ---
 
-class: transition
+class: transition 
 
-# #2 Infrastructure
+# Infrastructure
+.counting[
+# 2
+]
 
 ---
 
@@ -400,11 +410,27 @@ class: center middle
 
 class: transition
 
-# #3 The Code
+# The Code
+.counting[
+# 3
+]
 
 ???
 
 - notice how I didn't talk about the code we wrote yet
+
+---
+
+class: center middle
+
+# Testability
+
+???
+
+- observable
+- decomposable
+- simple
+- controllable
 
 ---
 
@@ -483,7 +509,7 @@ class: center middle
 --
 
 .col-6.good-practice[
-### Multiple releases per day
+### Multiple deployments per day
 ]
 
 --

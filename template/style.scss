@@ -14,7 +14,7 @@ $overlay          : transparentize(#000, .5);
 $font-size        : 28px;
 $font-size-impact : 128px;
 $font             : 'Open Sans', Arial, Helvetica, sans-serif;
-$font-title       : 'Open Sans'Arial, Helvetica, sans-serif;
+$font-title       : 'Open Sans', Arial, Helvetica, sans-serif;
 $font-fixed       : 'Lucida Console', Monaco, monospace;
 $margin           : 20px;
 $iframe-scale     : 1.5;
@@ -289,4 +289,20 @@ blockquote {
 
 .side-by-side img {
   width: 500px;
+}
+
+.counting {
+  display: inline-block;
+}
+
+.counting h1  {
+  counter-increment: counting;
+  content: counter(counting);
+
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 10px 25px;
+
+  background-color: $text-light;
+  color: $text-dark;
 }
