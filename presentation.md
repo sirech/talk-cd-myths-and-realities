@@ -36,7 +36,7 @@ class: middle center
 > Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
 
 .bottom-right[
-### continuousdelivery.com/
+### continuousdelivery.com
 ]
 
 ---
@@ -111,13 +111,13 @@ class: center middle
 
 class: center middle
 
-# That's not very concrete
+# *That's not very concrete*
 
 ---
 
 class: center middle
 
-# Let's try to get practical
+# *Let's try to get practical*
 
 ???
 
@@ -169,11 +169,21 @@ background-image: url(images/team.png)
 
 ---
 
-picture of multiple services
+class: center middle
+
+# Multiple microservices with frontend and backend
 
 ---
 
-picture release process (including test systems)
+class: center middle
+
+![deployment-overview](images/deployment-overview.jpg)
+
+---
+
+class: center middle
+
+![deployment-details](images/deployment-details.jpg)
 
 ---
 
@@ -207,13 +217,6 @@ class: center middle
 class: transition
 
 # Something had to change
-
----
-
-class: center middle
-
-# Many small improvements
-## Over the course of roughly one year
 
 ---
 
@@ -304,8 +307,7 @@ class: center middle
 
 ---
 
-class: full-width concourse
-background-image: url(images/parallel.png)
+picture of small pipelines
 
 ---
 
@@ -353,7 +355,7 @@ class: center middle
 
 class: center middle
 
-# DevOps mindset
+# **DevOps** mindset
 
 ---
 
@@ -378,12 +380,16 @@ class: center middle
 
 class: center middle
 
-# Yeah, but how?
+# *Yeah, but how?*
 
 ---
 
 class: center middle
 ![iac](images/iac.jpg)
+
+.bottom-right[
+### infrastructure-as-code.com
+]
 
 ---
 
@@ -392,19 +398,44 @@ class: center middle
 
 ---
 
-terraform code snippet
+class: center middle
+
+```hcl
+resource "aws_ecs_cluster" "ecs-cluster" {
+  name = "${var.ecs-cluster-name}"
+}
+
+resource "aws_autoscaling_group" "ecs-autoscaling-group" {
+  name                      = "ecs-asg"
+  launch_configuration      = "${aws_launch_configuration.config.name}"
+  max_size                  = "${var.max-instance-size}"
+  min_size                  = "${var.min-instance-size}"
+}
+
+resource "aws_launch_configuration" "config" {
+  name_prefix          = "ecs-launch-configuration-"
+  image_id             = "${data.aws_ami.latest_ecs_ami.id}"
+}
+```
 
 ---
 
-picture of frontend being deployed to cdn
+class: center middle
+
+![docker](images/docker.png)
 
 ---
 
-picture of backend being deployed to ECS
+class: center middle
+
+![infrastructure](images/infrastructure.jpg)
 
 ---
 
-picture of support hero
+class: center middle
+
+# Support hero
+![support-hero](images/support-hero.jpeg)
 
 ---
 
@@ -429,7 +460,7 @@ class: transition
 
 class: center middle
 
-# Testability
+# Design for Testability
 
 ???
 
@@ -446,6 +477,12 @@ class: center middle
 
 ---
 
+class: center middle
+
+![tdd](images/tdd.png)
+
+---
+
 picture of testing pyramid transition
 
 ---
@@ -453,6 +490,16 @@ picture of testing pyramid transition
 class: center middle
 
 # TBD
+
+.bottom-right[
+### trunkbaseddevelopment.com
+]
+
+---
+
+class: center middle
+
+# A deployment is *not* a release
 
 ---
 
@@ -466,17 +513,62 @@ class: center middle
 
 ---
 
-sample feature toggle
+class: center middle
+
+```html
+<section class="container">
+  {{ service.label }}
+
+* <app-feature-toggle-component featureToggleName="priceTag">
+    <offer-price
+      class="checkbox__label checkbox__label--inverted"
+      [offerPrice]="service.price"
+      [offerCurrency]="service.currency"
+    ></offer-price>
+
+  </app-feature-toggle-component>
+</section>
+```
 
 ---
 
 class: center middle
 
-# Immutability
+```kotlin
+@RestController
+@RequestMapping(PATH, consumes = [MediaType.APPLICATION_JSON_VALUE])
+*@ConditionalOnExpression("\${pact.enabled:true}")
+class PactController(val repository: Repository)
+```
 
 ---
 
-sample immutable code
+class: center middle
+
+# Declarative style
+
+---
+
+class: center middle
+
+```java
+private ImmutableList<Vin> vinLists(HttpHeaders httpHeaders) {
+    return Arrays.asList(
+            httpHeaders.getFirst(HEADER_USER_VINLIST),
+            httpHeaders.getFirst(HEADER_SECOND_USER_VINLIST),
+            httpHeaders.getFirst(HEADER_USER_EMPLOYEE)
+        .stream()
+        .map(header -> toVinList(header))
+        .flatMap(l -> l.stream())
+        .distinct()
+        .collect(ImmutableList.toImmutableList());
+}
+```
+
+???
+
+- immutable objects and lists
+- declarative operations
 
 ---
 
@@ -502,7 +594,8 @@ background-image: url(images/all-pipelines.png)
 
 ---
 
-picture aws infra
+class: full-width concourse
+background-image: url(images/parallel.png)
 
 ---
 
@@ -592,19 +685,6 @@ class: center middle
 class: center middle
 
 # It is never done. You have to keep working and improving
-
----
-
-class: impact full-width
-background-image: url(images/background5.jpg)
-
-.impact-wrapper[
-# Links
-]
-
----
-
-links go here
 
 ---
 
