@@ -22,12 +22,20 @@ class: transition
  Lead Developer
  
  **Thought**Works
+ 
+???
+
+- part of the very first class
 
 ---
 
 class: transition
 
 # What is Continuous Delivery?
+
+???
+
+- let's make sure we are all on the same page before getting into details
 
 ---
 
@@ -45,6 +53,11 @@ class: center middle
 
 ![cd](images/cd.jpg)
 
+???
+
+- the bible
+- jez humble, a former TWer
+
 ---
 
 class: transition
@@ -60,6 +73,10 @@ class: center middle
 .bottom-right[
 ### thoughtworks.com/radar/techniques/four­key­metrics
 ]
+
+???
+
+- there is research that shows that high performing organizations practice CD in their day to day 
 
 ---
 
@@ -113,6 +130,11 @@ class: center middle
 
 # *That's not very concrete*
 
+???
+
+- nothing to argue against these principles
+- can we picture how to apply them, though?
+
 ---
 
 class: center middle
@@ -123,10 +145,6 @@ class: center middle
 
 - was talking to another former student of this program that now works at TW as well
 - recommended a proper practical case from the industry
-
----
-
-picture of left to right
 
 ---
 
@@ -146,9 +164,9 @@ background-image: url(images/background3.jpg)
 # Agile transformation in automotive
 ]
 
----
+???
 
-portfolio context
+- I'm going to talk about a project is was part of, where I brought these principles to a team
 
 ---
 
@@ -167,17 +185,30 @@ class: center middle
 class: full-width
 background-image: url(images/team.png)
 
+???
+
+- agile team, part of a bigger portfolio
+- client, us and other consultancies involved
+
 ---
 
 class: center middle
 
 # Multiple microservices with frontend and backend
 
+???
+
+- web applications for car owners to check the status of their vehicles basically
+
 ---
 
 class: center middle
 
 ![deployment-overview](images/deployment-overview.jpg)
+
+???
+
+- claimed to do CI/CD, in practice the picture was grim
 
 ---
 
@@ -198,19 +229,35 @@ class: center middle
 
 --
 
-## 1,5d regression testing before each deployment
+## Manual regression testing before each deployment
+
+???
+
+- day and a half in fact
 
 --
 
 ## Many open bugs
 
+???
+
+- massively inconsistent ui
+
 --
 
 ## Unpredictable cadence
 
+???
+
+- first big project I worked on was ongoing, sizings were hilariously inaccurate
+
 --
 
 ## Regular delays
+
+???
+
+- same project was partially shipped with two quarters of delay
 
 ---
 
@@ -218,16 +265,29 @@ class: transition
 
 # Something had to change
 
+???
+
+- client was not happy
+- team members were not happy
+
 ---
 
 class: center middle
 
 ![venn](images/venn.png)
 
+???
+
+- changes on all three areas were needed
+
 ---
 
 class: center middle
 ![path-to-prod](images/path-to-prod.png)
+
+???
+
+- you'll see me talk about path to production over and over
 
 ---
 
@@ -237,6 +297,10 @@ class: transition
 .counting[
 # 1
 ]
+
+???
+
+- first area that we touched
 
 ---
 
@@ -260,6 +324,11 @@ class: center middle
 ### www.gocd.org/2017/05/02/what-does-pipelines-as-code-really-mean/
 ]
 
+???
+
+- no ui changes
+- no XML dumps
+
 ---
 
 class: middle
@@ -281,6 +350,10 @@ class: middle
       TARGET: js
     file: git/pipeline/tasks/tests/task.yml
 ```
+
+???
+
+- this is a pipeline in concourse, the CI system we migrated to
 
 ---
 
@@ -310,10 +383,18 @@ class: center middle
 
 # Small, independent pipelines
 
+???
+
+- see the difference with what I showed before
+
 ---
 
 class: center middle
 ![small-pipelines](images/small-pipelines.jpg)
+
+???
+
+- keyword: smaller batches
 
 ---
 
@@ -329,8 +410,13 @@ class: center middle
 .img[![eslint](images/eslint.jpg)]
 .img[![prettier](images/prettier.png)]
 .img[![stylelint](images/stylelint.png)]
+.img[![headless-chrome](images/headless-chrome.png)]
 ]
 
+???
+
+- using better tools save time and discussions
+- keyword: automation
 ---
 
 class: center middle
@@ -346,10 +432,29 @@ class: transition
 # 2
 ]
 
+???
+
+- second major area to touch
+
+---
+
+class: center middle
+![on-prem](images/on-prem.png)
+
+???
+
+- at this point our apps were still running on the ancient on prem infra
+- we could not split FE/BE yet
+
 ---
 
 class: center middle
 ![cloud](images/cloud.png)
+
+???
+
+- what does using the cloud have to do with doing CI/CD?
+- in my experience, a lot
 
 ---
 
@@ -357,11 +462,21 @@ class: center middle
 
 # How do you become faster by *adding* responsibilities to the team?
 
+???
+
+- the migration to the cloud was to be done by our team, with some support
+- we would use the "you build it, you run it" principle
+
 ---
 
 class: center middle
 
 # **DevOps** mindset
+
+???
+
+- another buzzword
+- what you build and how you run it is very much related
 
 ---
 
@@ -369,6 +484,9 @@ class: center middle
 
 # Autonomy
 
+???
+
+- I don't have this autonomy in my current project, and it is making things painful
 
 ---
 
@@ -381,6 +499,10 @@ class: center middle
 class: center middle
 
 # Leverage a larger community
+
+???
+
+- internal solutions tend to have few customers, and thus don't evolve much
 
 ---
 
@@ -396,6 +518,12 @@ class: center middle
 .bottom-right[
 ### infrastructure-as-code.com
 ]
+
+???
+
+- another book I recommend, written by a colleague
+- IaC means provisioning infrastructure through executable code
+- Treat that code as regular code -> test, refactor
 
 ---
 
@@ -424,6 +552,11 @@ resource "aws_launch_configuration" "config" {
 }
 ```
 
+???
+
+- just to give you a taste, this provisions an ECS Cluster
+- declarative instead of imperative
+
 ---
 
 class: center middle
@@ -443,11 +576,16 @@ class: center middle
 # Support hero
 ![support-hero](images/support-hero.jpeg)
 
+???
+
+- a process change
+- rotating responsibility of monitoring and checking the state of the infra through the team
+
 ---
 
 class: center middle
 
-# Owning your infrastructure makes it exponentially easier to deliver
+# Owning your infrastructure makes it exponentially easier to deliver changes to your application
 
 ---
 
@@ -461,6 +599,18 @@ class: transition
 ???
 
 - notice how I didn't talk about the code we wrote yet
+- you _cannot_ truly implement CI/CD for a crappy legacy app
+
+---
+
+class: center middle
+
+# Focus on simplicity
+
+???
+
+- predicting the future is hard
+- build what you need now, not what you might need
 
 ---
 
@@ -481,6 +631,11 @@ class: center middle
 
 # TDD
 
+???
+
+- one of our favorite practices at TW
+- many people claim to do it, and then never really follow through
+
 ---
 
 class: center middle
@@ -489,7 +644,8 @@ class: center middle
 
 ---
 
-picture of testing pyramid transition
+class: center middle
+![pyramid](images/pyramid.jpg)
 
 ---
 
@@ -501,11 +657,22 @@ class: center middle
 ### trunkbaseddevelopment.com
 ]
 
+???
+
+- a less known acronym
+- why? In order to move faster
+
 ---
 
 class: center middle
 
 # A deployment is *not* a release
+
+???
+
+- common misconception
+- from the technical standpoint we want to have all our code on prod
+- from the business side, certain features can only be released at specific points
 
 ---
 
@@ -536,6 +703,10 @@ class: center middle
 </section>
 ```
 
+???
+
+- visual toggle, the user won't see a particular change
+
 ---
 
 class: center middle
@@ -547,11 +718,21 @@ class: center middle
 class PactController(val repository: Repository)
 ```
 
+???
+
+- toggles can (and should!) be also implemented from the BE side
+
 ---
 
 class: center middle
 
 # Declarative style
+
+???
+
+- switch the code to a more declarative style
+- makes intentions clearer
+- what instead of how
 
 ---
 
@@ -581,6 +762,11 @@ private ImmutableList<Vin> vinLists(HttpHeaders httpHeaders) {
 class: center middle
 ![kotlin](images/kotlin.png)
 
+???
+
+- as a consequence, we wanted to move from Java to Kotlin because it supported the style we wanted to use better
+- keyword: continous improvement
+
 ---
 
 class: transition
@@ -592,11 +778,19 @@ class: transition
 class: center middle
 ![path-to-prod](images/path-to-prod.png)
 
+???
+
+- I showed you this before, how did we fare?
+
 ---
 
 class: center middle
 
 # May, 2019
+
+???
+
+- as you can see, change takes time
 
 ---
 
@@ -625,7 +819,7 @@ class: center middle
 --
 
 .col-6.bad-practice[
-### 1,5d regression testing
+### Manual regression testing
 ]
 
 --
