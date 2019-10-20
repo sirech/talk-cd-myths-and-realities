@@ -64,6 +64,10 @@ class: transition
 
 # Why Continuous Delivery?
 
+???
+
+- every job ad says something about CI/CD
+
 ---
 
 class: center middle
@@ -83,6 +87,10 @@ class: center middle
 class: transition
 
 # How to implement it?
+
+???
+
+- abstract level, without tools
 
 ---
 
@@ -155,6 +163,10 @@ background-image: url(images/background2.jpg)
 # Case Study
 ]
 
+???
+
+- doesn't mean it can't work otherwise, just that this is how we did it in this particular case
+
 ---
 
 class: impact full-width
@@ -180,6 +192,10 @@ class: center middle
 
 # March, 2018
 
+???
+
+- context: big portfolio with a lot of agile teams trying to deliver web apps
+
 ---
 
 class: full-width
@@ -199,6 +215,7 @@ class: center middle
 ???
 
 - web applications for car owners to check the status of their vehicles basically
+- tech: spring boot + angular
 
 ---
 
@@ -301,6 +318,8 @@ class: transition
 ???
 
 - first area that we touched
+- centralized Jenkins
+- barely maintained
 
 ---
 
@@ -476,6 +495,8 @@ class: center middle
 ???
 
 - another buzzword
+- centralized Jenkins
+- barely maintained
 - what you build and how you run it is very much related
 
 ---
@@ -580,6 +601,7 @@ class: center middle
 
 - a process change
 - rotating responsibility of monitoring and checking the state of the infra through the team
+- keyword: shared responsibility
 
 ---
 
@@ -646,6 +668,10 @@ class: center middle
 
 class: center middle
 ![pyramid](images/pyramid.jpg)
+
+???
+
+- most people would agree that some sort of automated testing is needed nowadays
 
 ---
 
