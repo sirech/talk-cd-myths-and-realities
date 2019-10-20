@@ -226,6 +226,11 @@ class: center middle
 
 ---
 
+class: center middle
+![path-to-prod](images/path-to-prod.png)
+
+---
+
 class: transition
 
 # Delivery pipeline
@@ -307,7 +312,8 @@ class: center middle
 
 ---
 
-picture of small pipelines
+class: center middle
+![small-pipelines](images/small-pipelines.jpg)
 
 ---
 
@@ -580,6 +586,11 @@ class: center middle
 class: transition
 
 # Ending point
+
+---
+
+class: center middle
+![path-to-prod](images/path-to-prod.png)
 
 ---
 
