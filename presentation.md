@@ -26,6 +26,8 @@ class: transition
 ???
 
 - part of the very first class
+- hope the topic will be interesting
+- I did not hear about this when I was studying myself
 
 ---
 
@@ -46,6 +48,10 @@ class: middle center
 .bottom-right[
 ### continuousdelivery.com
 ]
+
+???
+
+- safely, quickly and sustainable, we want to keep those three words in mind
 
 ---
 
@@ -179,6 +185,7 @@ background-image: url(images/background3.jpg)
 ???
 
 - I'm going to talk about a project is was part of, where I brought these principles to a team
+- automotive is an interesting example, as they are used to much longer release cycles
 
 ---
 
@@ -203,7 +210,6 @@ background-image: url(images/team.png)
 
 ???
 
-- agile team, part of a bigger portfolio
 - client, us and other consultancies involved
 
 ---
@@ -237,6 +243,10 @@ class: center middle
 
 class: full-width
 background-image: url(images/thisisfine.png)
+
+???
+
+- the situation is best described by this picture
 
 ---
 
@@ -396,6 +406,10 @@ run:
     ./go test-${TARGET}
 ```
 
+???
+
+- pipeline itself is pretty simple, just orchestrating things
+
 ---
 
 class: center middle
@@ -474,6 +488,7 @@ class: center middle
 
 - what does using the cloud have to do with doing CI/CD?
 - in my experience, a lot
+- what you build and how you run it is very much related
 
 ---
 
@@ -495,9 +510,8 @@ class: center middle
 ???
 
 - another buzzword
-- centralized Jenkins
-- barely maintained
-- what you build and how you run it is very much related
+- closing the gap between building software and putting it in front of users
+- faster feedback loop
 
 ---
 
