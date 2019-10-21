@@ -81,7 +81,7 @@ blockquote {
   background-color: $primary;
   vertical-align: middle;
   text-align: center;
-  &, h1, h2 { color: $light; }
+  &, h1, h2, h3 { color: $light; }
   h1 {
     font-size: $font-size-impact;
   }

@@ -919,7 +919,24 @@ class: center middle
 
 ---
 
-TW publicity?
+class: impact full-width
+background-image: url(images/background5.jpg)
+
+.impact-wrapper[
+## JOIN OUR COMMUNITY
+
+<br />
+
+### *26 years* experience
+### *42 offices* in 13 countries
+### *Thought leader* in agile software development and continuous delivery
+### *6000+* thoughtworkers worldwide
+### *300+* thoughtworkers in Germany
+
+<br />
+
+#### de-recruiting@thoughtworks.com
+]
 
 ---
 
