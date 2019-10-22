@@ -14,6 +14,11 @@ background-image: url(images/background1.jpg)
 # {{title}}
 ]
 
+???
+
+- hope the topic will be interesting
+- I did not hear about this when I was studying myself
+
 ---
 
 class: transition
@@ -26,8 +31,6 @@ class: transition
 ???
 
 - part of the very first class
-- hope the topic will be interesting
-- I did not hear about this when I was studying myself
 
 ---
 
@@ -52,17 +55,6 @@ class: middle center
 ???
 
 - safely, quickly and sustainable, we want to keep those three words in mind
-
----
-
-class: center middle
-
-![cd](images/cd.jpg)
-
-???
-
-- the bible
-- jez humble, a former TWer
 
 ---
 
@@ -142,21 +134,11 @@ class: center middle
 
 class: center middle
 
-# *That's not very concrete*
-
-???
-
-- nothing to argue against these principles
-- can we picture how to apply them, though?
-
----
-
-class: center middle
-
 # *Let's try to get practical*
 
 ???
 
+- not very concrete, can we picture how to apply them, though?
 - was talking to another former student of this program that now works at TW as well
 - recommended a proper practical case from the industry
 
@@ -337,11 +319,9 @@ class: center middle
 
 # The code for the path to production is as important as the regular code
 
----
+???
 
-class: center middle
-
-# Own your pipelines
+- own your pipelines
 
 ---
 
@@ -636,17 +616,6 @@ class: transition
 
 - notice how I didn't talk about the code we wrote yet
 - you _cannot_ truly implement CI/CD for a crappy legacy app
-
----
-
-class: center middle
-
-# Focus on simplicity
-
-???
-
-- predicting the future is hard
-- build what you need now, not what you might need
 
 ---
 
