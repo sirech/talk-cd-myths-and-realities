@@ -16,7 +16,7 @@ background-image: url(images/background1.jpg)
 
 ???
 
-- hope the topic will be interesting
+- this topic interests me a lot
 - I did not hear about this when I was studying myself
 
 ---
@@ -31,6 +31,8 @@ class: transition
 ???
 
 - part of the very first class
+- worked both in product companies and as a consultant
+- have had time to form strong opinions about stuff
 
 ---
 
@@ -55,6 +57,7 @@ class: middle center
 ???
 
 - safely, quickly and sustainable, we want to keep those three words in mind
+- seems straightforward
 
 ---
 
@@ -65,6 +68,7 @@ class: transition
 ???
 
 - every job ad says something about CI/CD
+- what do companies get out of this?
 
 ---
 
@@ -79,6 +83,7 @@ class: center middle
 ???
 
 - there is research that shows that high performing organizations practice CD in their day to day 
+- there is a reason for organizations to invest in CI/CD
 
 ---
 
@@ -128,7 +133,7 @@ class: center middle
 
 ???
 
-- nice concepts, but on their own they don't have a lot of meaning
+- last one is interesting, as often CI/CD is seen as something that is implemented by an external expensive consultant, when it should be something owned by the team
 
 ---
 
@@ -139,7 +144,7 @@ class: center middle
 ???
 
 - not very concrete, can we picture how to apply them, though?
-- was talking to another former student of this program that now works at TW as well
+- was talking to a colleague that studied here as well
 - recommended a proper practical case from the industry
 
 ---
@@ -183,7 +188,8 @@ class: center middle
 
 ???
 
-- context: big portfolio with a lot of agile teams trying to deliver web apps
+- context: bunch of agile teams working together
+- build a platform to offer connected services to car owners
 
 ---
 
@@ -229,6 +235,7 @@ background-image: url(images/thisisfine.png)
 ???
 
 - the situation is best described by this picture
+- let's go over some pain points
 
 ---
 
@@ -258,7 +265,7 @@ class: center middle
 
 ???
 
-- first big project I worked on was ongoing, sizings were hilariously inaccurate
+- most visible by our inability to size things reliably
 
 --
 
@@ -297,6 +304,8 @@ class: center middle
 ???
 
 - you'll see me talk about path to production over and over
+- how fast can we move from left to right in a safe and sustainable way
+- right to left is important as well. How fast can be get feedback if something is not working and fix it
 
 ---
 
@@ -311,7 +320,7 @@ class: transition
 
 - first area that we touched
 - centralized Jenkins
-- barely maintained
+- like every centralized jenkins I've ever seen, it was poorly maintained, unreliable, and didn't meet our needs
 
 ---
 
@@ -322,6 +331,7 @@ class: center middle
 ???
 
 - own your pipelines
+- if you treat your delivery code as a second class citizen, it will be of second quality
 
 ---
 
@@ -363,6 +373,7 @@ class: middle
 ???
 
 - this is a pipeline in concourse, the CI system we migrated to
+- tool itself is not important. Most modern ones support similar ideas
 
 ---
 
@@ -447,6 +458,7 @@ class: transition
 
 ???
 
+- at this point we had a new tool, and rewritten all our pipelines
 - second major area to touch
 
 ---
@@ -509,6 +521,10 @@ class: center middle
 
 # Agility
 
+???
+
+- cheap experiments
+
 ---
 
 class: center middle
@@ -569,14 +585,21 @@ resource "aws_launch_configuration" "config" {
 
 ???
 
-- just to give you a taste, this provisions an ECS Cluster
 - declarative instead of imperative
+- resources are artifacts that need to be provisioned (in AWS)
+- tf takes care of the dependencies between resources
+- just to give you a taste, this provisions an ECS Cluster
 
 ---
 
 class: center middle
 
 ![docker](images/docker.png)
+
+???
+
+- define an execution environment for an app
+- portable, reusable
 
 ---
 
@@ -639,7 +662,8 @@ class: center middle
 ???
 
 - one of our favorite practices at TW
-- many people claim to do it, and then never really follow through
+- when I was studying here, there was this student who was a bit older and had some industry experience who was really serious about TDD
+- it took me years to understand why that was a good thing
 
 ---
 
@@ -651,6 +675,10 @@ class: center middle
 
 class: center middle
 ![pyramid](images/pyramid.jpg)
+
+.bottom-right[
+### martinfowler.com/articles/practical-test-pyramid.html
+]
 
 ???
 
@@ -670,6 +698,7 @@ class: center middle
 
 - a less known acronym
 - why? In order to move faster
+- it *has* to be combined with Pair Programming
 
 ---
 
@@ -692,6 +721,10 @@ class: center middle
 .bottom-right[
 ### martinfowler.com/articles/feature-toggles.html
 ]
+
+???
+
+- can be very complex or very simple
 
 ---
 
@@ -872,6 +905,10 @@ class: center middle
 .col-6.good-practice[
 ### Commitments reached
 ]
+
+???
+
+- it seems like an infomercial, but the change was truly big and visible
 
 ---
 
